@@ -20,22 +20,28 @@
   </head>
 
   <body>
-    <div class="stopwatch">
-      <h1><span class="gold">My</span> STOPWATCH</h1>
-      <div class="circle">
-        <span class="time" id="display">00:00:00</span>
+    <div class="container">
+      <div class="stopwatch">
+        <h1><span class="gold">My</span> STOPWATCH</h1>
+        <div class="circle">
+          <span class="time" id="display">00:00:00:00</span>
+        </div>
+
+        <div class="controls">
+          <button class="buttonPlay" aria-label="Play/Pause">
+            <img id="playButton" src="icons/play-button.svg" alt="Play" />
+            <img id="pauseButton" src="icons/pause-button.svg" alt="Pause" />
+          </button>
+
+          <button class="buttonReset" aria-label="Reset">
+            <img id="resetButton" src="icons/reset-button.svg" alt="Reset" />
+          </button>
+        </div>
       </div>
 
-      <div class="controls">
-        <button class="buttonPlay">
-          <img id="playButton" src="icons/play-button.svg" />
-
-          <img id="pauseButton" src="icons/pause-button.svg" />
-        </button>
-
-        <button class="buttonReset">
-          <img id="resetButton" src="icons/reset-button.svg" />
-        </button>
+      <div class="history">
+        <h2>History</h2>
+        <ul id="historyList"></ul>
       </div>
     </div>
     <script src="script.js"></script>
